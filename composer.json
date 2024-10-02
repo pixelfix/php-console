@@ -1,0 +1,16 @@
+{
+    "name": "pixelfix/console",
+    "autoload": {
+        "psr-4": {
+            "PixelFix\\Console\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PixelFix"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^7.1"
+    }
+}

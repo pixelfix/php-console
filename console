@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+use PixelFix\Console\Application;
+use PixelFix\Console\Kernel;
+
+include 'vendor/autoload.php';
+
+$namespace = 'PixelFix\\Console\\Commands\\';
+$argv = $_SERVER['argv'] ?? [];
+
+$application = new Application($namespace, $argv);
+$kernel = new Kernel($application);
+
+$status = $kernel->handle();
+
+exit($status);
